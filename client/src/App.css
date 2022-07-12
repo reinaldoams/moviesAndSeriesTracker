@@ -1,0 +1,36 @@
+body {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.835);
+    color: #fca311;
+    text-align: center;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.lists div {
+    width: 80%
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem 0.3rem;
+    border-radius: 10%;
+    color: #E5E5E5;
+    background-color: #14213D;
+}
+
+input {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
