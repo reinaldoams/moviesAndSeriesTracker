@@ -26,12 +26,18 @@ const Create = ({setIsLoading}) => {
         setIsLoading(false)
     }
 
+    const handleFormCancel = e => {
+        e.preventDefault()
+        setSelected(false)
+    }
+
     return (
         <form onSubmit={handleSubmit}>
             {!selected && <button onClick={handleSeriesClick}>Add Series</button>}
             {!selected && <button onClick={handleMovieClick}>Add Movie</button>}
             {selected && <input autoFocus placeholder={`Insert ${selected} Name Here`} value={mediaName} onChange={e => handleChange(e)}></input>}
             {selected && <button>Add</button>}
+            {selected && <button id="formCancelBtn" onClick={handleFormCancel}>Cancel</button>}
         </form>
     )
 }
